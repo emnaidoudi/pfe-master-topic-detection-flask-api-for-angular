@@ -35,3 +35,10 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 if __name__ == "__main__":
     app.run()
+
+    
+# from apscheduler.schedulers.background import BackgroundScheduler
+
+# scheduler = BackgroundScheduler()
+# scheduler.add_job(func=run_model, trigger="interval", seconds=30*24*60*60) # each month
+# scheduler.start()
